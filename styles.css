@@ -1,0 +1,100 @@
+:root {
+  --bg-primary: #000000;
+  --bg-secondary: #101010;
+  --bg-card: #141414;
+  --text-primary: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.7);
+  --accent: #ffc900;
+  --accent-dark: #c79b00;
+  --border-soft: rgba(255, 201, 0, 0.2);
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(255, 201, 0, 0.12), transparent 28%),
+    linear-gradient(180deg, #050505 0%, #000000 100%);
+  color: var(--text-primary);
+  font-family: "Open Sans", sans-serif;
+}
+
+.hero-section {
+  background: linear-gradient(180deg, rgba(255, 201, 0, 0.08), rgba(0, 0, 0, 0));
+}
+
+.eyebrow,
+.section-label {
+  color: var(--accent);
+  letter-spacing: 0.2em;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.btn-accent {
+  background-color: var(--accent);
+  border-color: var(--accent);
+  color: #000000;
+  font-weight: 700;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background-color: #ffd73d;
+  border-color: #ffd73d;
+  color: #000000;
+}
+
+a {
+  color: var(--accent);
+}
+
+a:hover,
+a:focus {
+  color: #ffd73d;
+}
+
+.info-card,
+.video-card {
+  background: linear-gradient(180deg, rgba(255, 201, 0, 0.05), rgba(255, 255, 255, 0.02));
+  border: 1px solid var(--border-soft);
+  border-radius: 1rem;
+  padding: 1.75rem;
+  box-shadow: 0 1rem 2.5rem rgba(0, 0, 0, 0.25);
+}
+
+.faq-accordion .accordion-item {
+  background-color: transparent;
+  border: 1px solid var(--border-soft);
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.faq-accordion .accordion-button {
+  background-color: var(--bg-card);
+  color: var(--text-primary);
+  font-weight: 700;
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background-color: rgba(255, 201, 0, 0.12);
+  color: var(--text-primary);
+}
+
+.faq-accordion .accordion-button::after {
+  filter: invert(87%) sepia(70%) saturate(2244%) hue-rotate(360deg) brightness(101%) contrast(103%);
+}
+
+.faq-accordion .accordion-body {
+  background-color: var(--bg-secondary);
+  color: var(--text-muted);
+}
+
+iframe {
+  border: 0;
+  border-radius: 0.75rem;
+}
+
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
