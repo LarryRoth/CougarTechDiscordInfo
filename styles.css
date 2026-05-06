@@ -90,6 +90,91 @@ a:focus {
   color: var(--text-muted);
 }
 
+.channel-table {
+  width: 100%;
+  min-width: 760px;
+  color: var(--text-muted);
+  border-collapse: collapse;
+}
+
+.channel-table th {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 0.85rem 1rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.channel-table td {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+  vertical-align: middle;
+}
+
+.channel-table td:first-child,
+.channel-table td:last-child {
+  white-space: nowrap;
+}
+
+.channel-table strong {
+  color: var(--text-primary);
+}
+
+.channel-table td:first-child strong,
+.channel-table td:last-child strong {
+  color: var(--accent);
+}
+
+.role-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.role-card {
+  background-color: rgba(20, 20, 20, 0.82);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+.role-card-featured {
+  border-color: rgba(255, 201, 0, 0.65);
+}
+
+.role-card h4 {
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-bottom: 0.85rem;
+}
+
+.role-card ul {
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.role-card li {
+  margin-bottom: 0.35rem;
+}
+
+.role-card li::marker {
+  color: var(--accent);
+}
+
+@media (max-width: 991.98px) {
+  .role-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .role-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 iframe {
   border: 0;
   border-radius: 0.75rem;
